@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#8f1830">
+  <meta name="description" content="KEEPS — an open-air photo booth for weddings, birthdays, engagements, corporate events, college fests and more. Photos worth keeping.">
+  <title>KEEPS ♡ | Photos worth keeping.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top"><strong>KEEPS ♡</strong><span>Photos worth keeping.</span></a>
+  <button class="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav><a href="#experience">Experience</a><a href="#included">What's included</a><a href="#events">Events</a><a href="#pricing">Pricing</a><a href="#availability">Availability</a><a href="#faq">FAQ</a><a class="pill small" href="#book">Book Now</a></nav>
+</header>
+<main id="top">
+  <section class="hero section">
+    <div class="hero-copy">
+      <p class="eyebrow">PHOTO BOOTHS FOR EVERY KIND OF CELEBRATION</p>
+      <h1>Take the <em>memory</em> home.</h1>
+      <p class="lead">A beautiful, open-air photo booth for the people who make your event unforgettable. Pose, click, print, share — and keep it forever.</p>
+      <div class="actions"><a class="pill" href="#availability">Book Your Date →</a><a class="text-link" href="#experience">See how it works ↓</a></div>
+    </div>
+    <figure class="polaroid hero-photo"><img src="keeps-booth.png" alt="KEEPS open-air photo booth setup at an evening celebration"><figcaption>Good people. Great memories. ♡</figcaption></figure>
+  </section>
+
+  <section id="events" class="event-strip"><span>♡ Weddings</span><span>♙ Birthdays</span><span>✦ Engagements</span><span>▣ Corporate</span><span>◇ College Fests</span><span>♧ Pop-ups & more</span></section>
+
+  <section id="experience" class="section vibe">
+    <figure class="polaroid"><img src="keeps-guests.png" alt="Friends enjoying a photo booth with playful props"><figcaption>Same people. Different memories. ♡</figcaption></figure>
+    <div><p class="eyebrow">MORE THAN PHOTOS</p><h2>It’s a vibe.</h2><p class="lead">We bring the booth, the props and the energy. Your guests step in with their people, use the touchscreen, take their photos and receive a keepsake from the night.</p><p class="script">Same people. Different memories. ♡</p>
+      <div id="included" class="icon-grid"><div>▣<b>Instant prints</b></div><div>✦<b>Fun props</b></div><div>✎<b>Custom designs</b></div><div>♧<b>Attendant on-site</b></div><div>▯<b>Digital copies</b></div></div>
+    </div>
+  </section>
+
+  <section class="section booking-zone">
+    <div id="pricing" class="price-card"><p class="eyebrow">THE KEEPS EXPERIENCE</p><h2>₹14,999</h2><p class="script">3 hours of photos worth keeping.</p>
+      <ul><li>Open-air KEEPS photo booth</li><li>Instant photo prints</li><li>Digital copies</li><li>Fun props</li><li>Custom photo-strip design</li><li>Your names / hashtag / event branding</li><li>KEEPS attendant throughout</li><li>Setup & pack-down</li></ul>
+      <p class="extra"><b>◷ Extra hour: ₹2,500</b></p><p class="micro">Travel charges may apply depending on venue. Any additional cost is discussed before payment.</p>
+    </div>
+    <div id="availability" class="calendar-card"><p class="eyebrow">CHECK AVAILABILITY</p><h2>Choose your date ♡</h2>
+      <div class="calendar-head"><button id="prevMonth" aria-label="Previous month">‹</button><b id="monthLabel"></b><button id="nextMonth" aria-label="Next month">›</button></div>
+      <div class="weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+      <div id="calendar" class="calendar" aria-live="polite"></div>
+      <div class="legend"><span>○ Available</span><span>● Booked</span><span>● Selected</span></div>
+      <p class="script side-note">One event. One booth. One date. ♡</p>
+      <a id="continueBtn" class="pill wide disabled" href="#book" aria-disabled="true">Select an available date</a>
+      <p class="micro center">Selecting a date sends an inquiry. <b>Your date isn’t reserved just yet.</b></p>
+    </div>
+  </section>
+
+  <section id="book" class="section form-section"><div><p class="eyebrow">YOUR KEEPS DATE</p><h2>Tell us about your event.</h2><p>We’ll review your request and contact you on WhatsApp to confirm availability. Payment details are shared after review.</p><p class="micro">Currently serving select cities across India. Travelling elsewhere? We can come to you — additional travel charges apply depending on the venue.</p></div>
+    <form id="bookingForm">
+      <label>Event date<input id="eventDate" name="eventDate" type="date" min="2026-12-04" required></label>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>WhatsApp number<input name="whatsapp" inputmode="tel" autocomplete="tel" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email"></label>
+      <label>Event type<select name="eventType" required><option value="">Choose one</option><option>Wedding</option><option>Birthday</option><option>Engagement</option><option>Corporate</option><option>College Fest</option><option>Pop-up</option><option>Other</option></select></label>
+      <label>City<select name="location" required><option value="">Choose your city</option><option>Kolkata</option><option>Delhi</option><option>Mumbai</option><option>Bengaluru</option><option>Hyderabad</option><option>Chennai</option><option>Pune</option><option>Ahmedabad</option><option>Jaipur</option><option value="Travel / Other city">Travel / Other city</option></select></label>
+      <label class="full">Hashtag, photo-strip or prop ideas<textarea name="ideas" rows="3" placeholder="Tell us what would make it feel like your event ♡"></textarea></label>
+      <label class="full">Anything else?<textarea name="notes" rows="3"></textarea></label>
+      <button class="pill wide full" type="submit">Send Booking Inquiry ♡</button><p id="formStatus" class="form-status full" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section id="faq" class="section faq"><p class="eyebrow">FAQ</p><h2>Good to know.</h2><details><summary>Does an inquiry reserve my date?</summary><p>No. Your date is reserved only after KEEPS confirms your booking. Multiple inquiries may be received for the same available date.</p></details><details><summary>How does payment work?</summary><p>After we review your request, a KEEPS team member will contact you on WhatsApp and share payment details. We confirm the booking after payment is verified.</p></details><details><summary>Are props included?</summary><p>Yes. Fun glasses, signs and photo-friendly props are included. Event-specific requests are welcome.</p></details><details><summary>Can we customize the prints?</summary><p>Yes. We can personalize photo strips with names, dates, logos and custom hashtags.</p></details></section>
+</main>
+<footer><a class="brand" href="#top"><strong>KEEPS ♡</strong><span>Photos worth keeping.</span></a><p>MEMORIES LOOK GOOD ON EVERYONE.</p><p><a href="mailto:keepsindia@gmail.com">keepsindia@gmail.com</a> · ♡</p></footer>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
