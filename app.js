@@ -27,7 +27,7 @@ async function loadAvailability() {
 
     const j = await r.json();
 
-    if (j.success && Array.isArray(j.confirmedDates)) {
+    if ((j.success || j.ok) && Array.isArray(j.confirmedDates)) {
       booked = new Set(j.confirmedDates);
     }
 
@@ -233,11 +233,13 @@ document
 
     e.preventDefault();
 
+    const form = e.currentTarget;
+
     const status =
       document.getElementById("formStatus");
 
     const fd =
-      new FormData(e.currentTarget);
+      new FormData(form);
 
     const data =
       Object.fromEntries(fd.entries());
@@ -296,7 +298,7 @@ document
 
 
       // Apps Script returns success
-      if (!j.success) {
+      if (!(j.success || j.ok)) {
         throw new Error(
           j.error ||
           j.message ||
@@ -313,7 +315,7 @@ document
         "We got your request ♡ Your date isn’t reserved just yet. A KEEPS team member will contact you on WhatsApp to confirm availability and finalize your booking.";
 
 
-      e.currentTarget.reset();
+      form.reset();
 
       selected = null;
 

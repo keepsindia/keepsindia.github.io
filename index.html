@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#8f1830">
-  <meta name="description" content="KEEPS — an open-air photo booth for weddings, birthdays, engagements, corporate events, college fests and more. Photos worth keeping.">
+  <meta name="description" content="KEEPS — an open-air photo booth for weddings, birthdays, engagements, corporate events, college fests and more in Kolkata. Photos worth keeping.">
   <title>KEEPS ♡ | Photos worth keeping.</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -37,7 +37,7 @@
   <section class="section booking-zone">
     <div id="pricing" class="price-card"><p class="eyebrow">THE KEEPS EXPERIENCE</p><h2>₹14,999</h2><p class="script">3 hours of photos worth keeping.</p>
       <ul><li>Open-air KEEPS photo booth</li><li>Instant photo prints</li><li>Digital copies</li><li>Fun props</li><li>Custom photo-strip design</li><li>Your names / hashtag / event branding</li><li>KEEPS attendant throughout</li><li>Setup & pack-down</li></ul>
-      <p class="extra"><b>◷ Extra hour: ₹2,500</b></p><p class="micro">Travel charges may apply depending on venue. Any additional cost is discussed before payment.</p>
+      <p class="extra"><b>◷ Extra hour: ₹2,500</b></p><p class="micro">Currently serving Kolkata. Travel charges may apply for venues outside our standard service area; any additional cost is discussed before payment.</p>
     </div>
     <div id="availability" class="calendar-card"><p class="eyebrow">CHECK AVAILABILITY</p><h2>Choose your date ♡</h2>
       <div class="calendar-head"><button id="prevMonth" aria-label="Previous month">‹</button><b id="monthLabel"></b><button id="nextMonth" aria-label="Next month">›</button></div>
@@ -50,14 +50,14 @@
     </div>
   </section>
 
-  <section id="book" class="section form-section"><div><p class="eyebrow">YOUR KEEPS DATE</p><h2>Tell us about your event.</h2><p>We’ll review your request and contact you on WhatsApp to confirm availability. Payment details are shared after review.</p><p class="micro">Currently serving select cities across India. Travelling elsewhere? We can come to you — additional travel charges apply depending on the venue.</p></div>
+  <section id="book" class="section form-section"><div><p class="eyebrow">YOUR KEEPS DATE</p><h2>Tell us about your event.</h2><p>We’ll review your request and contact you on WhatsApp to confirm availability. Payment details are shared after review.</p><p class="micro">Currently serving Kolkata & nearby areas ♡ More cities coming soon. Have an event a little outside Kolkata? Send us the location and we’ll let you know if we can make it there; additional travel charges may apply.</p></div>
     <form id="bookingForm">
-      <label>Event date<input id="eventDate" name="eventDate" type="date" min="2026-12-04" required></label>
+      <label>Event date<input id="eventDate" name="eventDate" type="date" required></label>
       <label>Your name<input name="name" autocomplete="name" required></label>
       <label>WhatsApp number<input name="whatsapp" inputmode="tel" autocomplete="tel" required></label>
       <label>Email<input name="email" type="email" autocomplete="email"></label>
       <label>Event type<select name="eventType" required><option value="">Choose one</option><option>Wedding</option><option>Birthday</option><option>Engagement</option><option>Corporate</option><option>College Fest</option><option>Pop-up</option><option>Other</option></select></label>
-      <label>City<select name="location" required><option value="">Choose your city</option><option>Kolkata</option><option>Delhi</option><option>Mumbai</option><option>Bengaluru</option><option>Hyderabad</option><option>Chennai</option><option>Pune</option><option>Ahmedabad</option><option>Jaipur</option><option value="Travel / Other city">Travel / Other city</option></select></label>
+      <label>Event venue / area in Kolkata<input name="location" placeholder="Venue or area, Kolkata" autocomplete="street-address" required></label>
       <label class="full">Hashtag, photo-strip or prop ideas<textarea name="ideas" rows="3" placeholder="Tell us what would make it feel like your event ♡"></textarea></label>
       <label class="full">Anything else?<textarea name="notes" rows="3"></textarea></label>
       <button class="pill wide full" type="submit">Send Booking Inquiry ♡</button><p id="formStatus" class="form-status full" aria-live="polite"></p>
